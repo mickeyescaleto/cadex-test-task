@@ -3,3 +3,9 @@ node_modules
 
 # environment
 .env
+
+# next.js
+.next
+
+# typescript
+next-env.d.ts
