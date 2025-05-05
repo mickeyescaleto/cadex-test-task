@@ -2,9 +2,14 @@
   "name": "cadex-test-task",
   "version": "1.0.0",
   "private": true,
-  "scripts": {},
+  "type": "module",
+  "scripts": {
+    "format": "prettier --check \"**/*.{js,ts,jsx,tsx,cjs,mjs,mdx}\"",
+    "format:fix": "prettier --write \"**/*.{js,ts,jsx,tsx,cjs,mjs,mdx}\""
+  },
   "devDependencies": {
     "@types/node": "^22.15.4",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   }
 }
