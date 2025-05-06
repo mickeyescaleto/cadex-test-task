@@ -34,7 +34,13 @@ const StyledButton = styled.button<StyledButtonProps>`
   border-radius: ${({ theme }) => theme.radius.medium};
   background-color: ${({ theme }) => oklch(theme.colors.primary)};
   color: ${({ theme }) => oklch(theme.colors['primary-text'])};
+  user-select: none;
   transition: background-color 0.3s ease;
+
+  &:disabled {
+    opacity: 50%;
+    pointer-events: none;
+  }
 
   &:hover {
     background-color: ${({ theme }) => oklch(theme.colors.primary, 0.9)};

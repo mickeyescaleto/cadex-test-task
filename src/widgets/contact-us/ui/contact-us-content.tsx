@@ -2,8 +2,9 @@
 
 import styled from 'styled-components';
 
-export const Main = styled.main`
-  flex: 1;
+export const ContactUsContent = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 `;

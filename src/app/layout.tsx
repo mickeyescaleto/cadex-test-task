@@ -11,7 +11,10 @@ import { META } from '@/shared/constants/meta';
 import { Main } from '@/shared/ui/main';
 
 export const metadata: Metadata = {
-  title: META.TITLE,
+  title: {
+    default: META.TITLE,
+    template: `${META.TITLE} – %s`,
+  },
   description: META.DESCRIPTION,
 };
 

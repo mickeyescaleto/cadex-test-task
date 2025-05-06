@@ -16,6 +16,8 @@ export const theme = {
     'primary-text': 'var(--color-primary-text)',
     muted: 'var(--color-muted)',
     'muted-text': 'var(--color-muted-text)',
+    border: 'var(--color-border)',
+    error: 'var(--color-error)',
   },
   radius: {
     small: 'calc(var(--radius) - 0.25rem)',
