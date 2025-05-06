@@ -1,5 +1,10 @@
+import '@/core/styles/colors.css';
+
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
+
+import { inter } from '@/core/styles/fonts';
+import { StyledComponentsProvider } from '@/core/providers/styled-components-provider';
 
 export const metadata: Metadata = {
   title: 'Web application',
@@ -13,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.variable}>
+        <StyledComponentsProvider>{children}</StyledComponentsProvider>
+      </body>
     </html>
   );
 }
