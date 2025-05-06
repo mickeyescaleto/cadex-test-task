@@ -14,6 +14,8 @@ export const theme = {
     'inverse-text': 'var(--color-inverse-text)',
     primary: 'var(--color-primary)',
     'primary-text': 'var(--color-primary-text)',
+    muted: 'var(--color-muted)',
+    'muted-text': 'var(--color-muted-text)',
   },
   radius: {
     small: 'calc(var(--radius) - 0.25rem)',

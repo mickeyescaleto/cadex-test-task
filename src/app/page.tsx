@@ -1,3 +1,11 @@
-export default function HomePage() {
-  return <h1>HomePage</h1>;
+import { Features } from '@/widgets/features';
+import { Hero } from '@/widgets/hero';
+
+export default function RootPage() {
+  return (
+    <>
+      <Hero />
+      <Features />
+    </>
+  );
 }

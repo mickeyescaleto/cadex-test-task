@@ -19,6 +19,7 @@ const styles = css`
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    overflow-x: hidden;
     background-color: ${({ theme }) => oklch(theme.colors.background)};
     color: ${({ theme }) => oklch(theme.colors.text)};
     font-family: ${({ theme }) => theme.fonts.main};
