@@ -1,7 +1,9 @@
 'use client';
 
-import { media } from '@/shared/utilities/media';
 import { createGlobalStyle, css } from 'styled-components';
+
+import { oklch } from '@/shared/utilities/oklch';
+import { media } from '@/shared/utilities/media';
 
 const styles = css`
   html {
@@ -14,8 +16,11 @@ const styles = css`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.text};
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: ${({ theme }) => oklch(theme.colors.background)};
+    color: ${({ theme }) => oklch(theme.colors.text)};
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 1rem;
     font-weight: 400;

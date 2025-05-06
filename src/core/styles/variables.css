@@ -1,0 +1,13 @@
+:root {
+  --color-background: 98.5% 0 0;
+  --color-text: 20.5% 0 0;
+  --color-inverse: 20.5% 0 0;
+  --color-inverse-text: 98.5% 0 0;
+  --color-primary: 62.3% 0.214 259.815;
+  --color-primary-text: 1 0 0;
+
+  --radius: 0.5rem;
+
+  --shadow-medium:
+    0 4px 6px -1px oklch(0 0 0 / 0.1), 0 2px 4px -2px oklch(0 0 0 / 0.1);
+}

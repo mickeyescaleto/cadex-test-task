@@ -10,6 +10,18 @@ export const theme = {
   colors: {
     background: 'var(--color-background)',
     text: 'var(--color-text)',
+    inverse: 'var(--color-inverse)',
+    'inverse-text': 'var(--color-inverse-text)',
+    primary: 'var(--color-primary)',
+    'primary-text': 'var(--color-primary-text)',
+  },
+  radius: {
+    small: 'calc(var(--radius) - 0.25rem)',
+    medium: 'var(--radius)',
+    large: 'calc(var(--radius) + 0.25rem)',
+  },
+  shadow: {
+    medium: 'var(--shadow-medium)',
   },
   variables: {
     size: 16,
